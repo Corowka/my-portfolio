@@ -1,0 +1,120 @@
+.section {
+  width: 100%;
+  background-image: url(/images/hero-section/bg.webp);
+  background-color: var(--gray-background-color);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--background-color);
+  width: fit-content;
+  padding: 48px 48px 56px 32px;
+  border-radius: 32px;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.divider {
+  color: var(--text-color);
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.exp {
+  color: var(--text-color);
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.expMobile {
+  display: none;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  padding: 24px 0 48px;
+  color: var(--text-color);
+  font-size: 20px;
+  gap: 8px 24px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 22px;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color) 0%,
+    var(--primary-color) 50%,
+    var(--secondary-color) 100%
+  );
+  background-size: 200% 100%;
+  background-position: 0 0;
+  color: var(--background-color);
+  text-decoration: none;
+  transition: all ease-in 150ms;
+}
+
+.button:hover {
+  background-position: 100% 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    background: var(--gray-background-color);
+  }
+
+  .card {
+    text-align: center;
+    background: none;
+    padding: 48px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  .exp {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .expMobile {
+    font-size: 24px;
+    margin-top: 16px;
+    font-weight: 500;
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: fit-content;
+  }
+}
