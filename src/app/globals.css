@@ -1,0 +1,18 @@
+:root {
+  --font-roboto: "Roboto", Arial, sans-serif;
+
+  --primary-color: #4767d4;
+  --secondary-color: #d42a78;
+  --background-color: #fdfdfd;
+  --gray-background-color: #e6e6e6;
+  --text-color: #040507;
+  --error-color: #cf3c3c;
+}
+
+* {
+  font-family: var(--font-roboto);
+}
+
+html {
+  scroll-behavior: smooth;
+}

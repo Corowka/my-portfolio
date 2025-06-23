@@ -1,0 +1,19 @@
+.section {
+  border-top: 2px solid var(--gray-background-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.text {
+  color: var(--text-color);
+}
+
+@media (max-width: 480px) {
+  .text {
+    text-align: center;
+  }
+}
