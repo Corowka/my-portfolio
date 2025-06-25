@@ -151,7 +151,7 @@
 
   .title {
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .text {
@@ -161,7 +161,12 @@
   }
 
   .list {
-    margin-top: 48px;
+    margin-top: 16px;
+    gap: 16px;
+  }
+
+  .item {
+    gap: 0;
   }
 
   .card {
@@ -181,5 +186,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-size: 32px;
+  }
+
+  .cardGoal {
+    font-size: 20px;
+  }
+
+  .cardFeatureItem {
+    font-size: 16px;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 260px;
+    height: 260px;
   }
 }

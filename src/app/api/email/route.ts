@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
       from: `"My portfolio website form" <${process.env.EMAIL}>`,
       to: "kopanchuke@gmail.com",
       subject: "💼 Work | Landing Page",
-      text: message,
+      text: `From: ${email}\n\nMessage:\n${message}`,
     });
     return NextResponse.json(
       { error: "Email was delivered successfully" },
